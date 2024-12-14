@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 MBTI Pep Talk API Documentation 🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌟 MBTI Pep Talk API 🌟</h1>
+    <p>Your personalized pep talk API for all MBTI types!</p>
+  </header>
+
+  <main>
+    <section class="introduction">
+      <h2>📚 Introduction</h2>
+      <p>The MBTI Pep Talk API provides personalized pep talks for each MBTI type. You can customize the mood to get pep talks for moments of sadness, anger, or happiness.</p>
+    </section>
+
+    <section class="endpoints">
+      <h2>📡 API Endpoints</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Endpoint</th>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/api/peptalk/:mbti</code></td>
+            <td>GET</td>
+            <td>Returns a random pep talk for the specified MBTI (default mood). Example: <code>/api/peptalk/INTJ</code></td>
+          </tr>
+          <tr>
+            <td><code>/api/peptalk/:mbti?mood=sad</code></td>
+            <td>GET</td>
+            <td>Returns a pep talk for the specified MBTI when they feel sad. Example: <code>/api/peptalk/ENTP?mood=sad</code></td>
+          </tr>
+          <tr>
+            <td><code>/api/peptalk/:mbti?mood=angry</code></td>
+            <td>GET</td>
+            <td>Returns a pep talk for the specified MBTI when they feel angry. Example: <code>/api/peptalk/INFJ?mood=angry</code></td>
+          </tr>
+          <tr>
+            <td><code>/api/peptalk/:mbti?mood=default</code></td>
+            <td>GET</td>
+            <td>Returns a pep talk for the specified MBTI in their default mood. Example: <code>/api/peptalk/ISFP?mood=default</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by Jiwon. Stay bold, stay strong, and get hyped!</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
