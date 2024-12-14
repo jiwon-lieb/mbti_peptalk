@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #FDF6F0;
+    color: #2F2E41;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #D269A2;
+    text-shadow: 2px 2px #F1C7F4;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #5F547D;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  section.introduction {
+    background-color: #FFDEE9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  section.introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #783E77;
+  }
+  
+  section.introduction p {
+    color: #2F2E41;
+  }
+  
+  section.endpoints {
+    background-color: #B8E3FF;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  section.endpoints h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #406882;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  table th, 
+  table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 2px solid #E0E0E0;
+  }
+  
+  table th {
+    background-color: #FFC2E2;
+    color: #2F2E41;
+  }
+  
+  table td {
+    background-color: #F8F1F1;
+    color: #2F2E41;
+  }
+  
+  code {
+    background-color: #F3E8FF;
+    color: #5F547D;
+    padding: 3px 6px;
+    border-radius: 6px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    color: #3D2C8D;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FDEBD0;
+    border-radius: 8px;
+  }
+   
