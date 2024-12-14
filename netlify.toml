@@ -1,4 +1,7 @@
-[build]
-  command = "npm install"
-  publish = "."
-  functions = "functions"
+[functions]
+  external_node_modules = ["express"]
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
