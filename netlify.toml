@@ -1,7 +1,7 @@
 [functions]
-  external_node_modules = ["express"]
+external_node_modules = ["express", "cors", "serverless-http"]
+
 [[redirects]]
-  force = true
-  from = "/api/*"
-  status = 200
-  to = "/.netlify/functions/api/:splat"
+from = "/*"
+to = "/.netlify/functions/server"
+status = 200
