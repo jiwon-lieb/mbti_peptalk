@@ -1,4 +1,5 @@
 [functions]
+directory = "./netlify/functions"
 external_node_modules = ["express", "cors", "serverless-http"]
 
 [[redirects]]
