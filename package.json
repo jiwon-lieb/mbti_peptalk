@@ -1,0 +1,7 @@
+{
+  "name": "mbti-pep-talk-api",
+  "version": "1.0.0",
+  "description": "API for MBTI Pep Talks",
+  "main": "functions/pepTalk.js",
+  "dependencies": {}
+}
