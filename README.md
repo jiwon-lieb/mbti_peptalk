@@ -137,7 +137,7 @@ Got ideas for new pep talks? Want to improve the design? We’d love your help! 
 ---
 
 ## 🪲 **Bugs and Issues**
-If you encounter any issues, please create a [GitHub issue](https://github.com/your-username/mbti-pep-talk-api/issues) so we can track and resolve it.
+If you encounter any issues, please create a [GitHub issue](https://github.com/jiwon-lieb/mbti_peptalk/issues) so we can track and resolve it.
 
 ---
 
