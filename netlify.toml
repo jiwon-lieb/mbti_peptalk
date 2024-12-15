@@ -1,3 +1,7 @@
+[build]
+publish = "public" 
+functions = "netlify/functions" # Functions folder for Netlify Lambda functions
+
 [functions]
 directory = "./netlify/functions"
 external_node_modules = ["express", "cors", "serverless-http"]
