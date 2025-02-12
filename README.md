@@ -5,7 +5,7 @@ Welcome to the **MBTI Pep Talk API**, an API that generates personalized pep tal
 ---
 
 ## 🚀 **About the Project**
-The MBTI Pep Talk API is a simple yet charming API that returns thoughtful, witty, and heartfelt pep talks for each of the 16 MBTI types. Not only does it customize advice for each MBTI type, but it also allows users to select a **mood**—because everyone needs different advice when they’re feeling **sad**, or **angry**.
+The MBTI Pep Talk API is a simple yet charming API that returns thoughtful, witty, and heartfelt pep talks for each of the 16 MBTI types. Not only does it customize advice for each MBTI type, but it also allows users to select a **mood**—because everyone needs different advice when they’re feeling **anxious**, **sad**, **angry** etc.
 
 This is just the beginning! Future versions will include more **emotions**, **customizable advice**, and maybe even **user-generated pep talks**.
 
@@ -16,8 +16,8 @@ Here's how you can interact with the MBTI Pep Talk API.
 
 | **Endpoint**              | **Method** | **Description**                                              |
 |--------------------------|------------|-------------------------------------------------------------|
-| `/api/peptalk/:mbti`       | GET        | Get a pep talk for the specified MBTI. Example: `/api/peptalk/INTJ` |
-| `/api/peptalk/:mbti?mood=default` | GET | Get a pep talk for the specified MBTI in a **default** mood. Example: `/api/peptalk/INTJ?mood=default` |
+| `/api/peptalk/`       | GET        | Get a pep talk, optionally with MBTI or mood filtering. Example: `/api/peptalk/?mbti_type=INTJ&mood=angry` |
+| `/api/peptalk/random` | GET | Get a random pep talk for the specified MBTI and mood. Example: `/api/peptalk/random/?mbti_type=INFP&mood=anxious` |
 | `/api/peptalk/:mbti?mood=sad`     | GET | Get a pep talk for when your MBTI type is feeling **sad**. Example: `/api/peptalk/ENTP?mood=sad`  |
 | `/api/peptalk/:mbti?mood=angry`   | GET | Get a pep talk for when your MBTI type is feeling **angry**. Example: `/api/peptalk/INFJ?mood=angry` |
 
@@ -35,13 +35,13 @@ You can call the API from any HTTP client like **Postman**, **Insomnia**, or eve
 
 **Example Request:**
 ```
-GET /api/peptalk/INTJ?mood=sad
+GET /api/peptalk/?mbti_type=INTJ&mood=angry
 ```
 
 **Example Response:**
 ```json
 {
-  "type": "INTJ",
+  "mbti_type": "INTJ",
   "mood": "sad",
   "message": "감정이 흐려질 때는, 논리를 다시 확인하는 것이 가장 안전합니다."
 }
@@ -94,7 +94,7 @@ Each type has its own unique flavor of pep talks. For logical types like **INTJ*
 Want to add your own pep talks or customize the API? You can! Here’s how:
 1. Open `server.js`
 2. Locate the **mbtiPepTalks** object and add your pep talks under each MBTI type.
-3. Moods are categorized as `default`, `sad`, and `angry`.
+3. Moods are categorized as `sad`, `anxious`, `angry` etc.
 ---
 
 ## 🌐 **Deployment**
