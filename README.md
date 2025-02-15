@@ -22,7 +22,7 @@ Here's how you can interact with the MBTI Pep Talk API.
 | `/api/peptalk/:id`   | GET | Get a specific pep talk. Example: `/api/peptalk/123/` |
 | `/api/peptalk/:id`   | DELETE | Delete a pep talk. Example: `/api/peptalk/123/` |
 | `/api/peptalk/:id`   | PATCH | Partially edit a pep talk. Example: `/api/peptalk/479/` |
-| `/api/peptalk/:id`   | PUT | Edit a pep talk. Example: `/api/peptalk/321/ |
+| `/api/peptalk/:id`   | PUT | Edit a pep talk. Example: `/api/peptalk/321/` |
 
 ### 📌 **Supported MBTI Types**
 The following MBTI types are supported:
